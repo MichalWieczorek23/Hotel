@@ -2,10 +2,10 @@
 
 SpecialService::SpecialService()
 {
-	cout << "Stworzylem SpecialService!" << endl;
+	//cout << "Stworzylem SpecialService!" << endl;
 }
 
 SpecialService::~SpecialService()
 {
-	cout << "Usunalem SpecialService!" << endl;
+	//cout << "Usunalem SpecialService!" << endl;
 }
