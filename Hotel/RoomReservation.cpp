@@ -2,6 +2,7 @@
 
 unsigned int RoomReservation::objectCount = 0;
 
+// Constructors:
 RoomReservation::RoomReservation()
 {
 	++objectCount;
@@ -10,16 +11,19 @@ RoomReservation::RoomReservation()
 	//cout << "Stworzylem room reservation!" << endl;
 }
 
-unsigned int RoomReservation::howManyObjects() {
-	return objectCount;
-}
-
+// Destructors:
 RoomReservation::~RoomReservation()
 {
 	--objectCount;
 	//cout << "Usunalem room reservation!" << endl;
 }
 
+// Methods return number of objects of this class
+unsigned int RoomReservation::howManyObjects() {
+	return objectCount;
+}
+
+// Getters:
 string RoomReservation::getDate() {
 	return this->date;
 }
@@ -36,6 +40,7 @@ Room RoomReservation::getRoom() {
 	return this->room;
 }
 
+// Setters:
 void RoomReservation::setDate(string date) {
 	this->date = date;
 }

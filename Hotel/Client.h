@@ -6,6 +6,8 @@ using std::cin;
 using std::endl;
 using std::string;
 
+// Class represents client. It contains class fields: id, firstName, lastName, birthDate, email, isSmoking,
+// phoneNumber and methods: getters, setters, howManyObjects()
 class Client
 {
 public:

@@ -6,6 +6,8 @@ using std::cin;
 using std::endl;
 using std::string;
 
+// Class represent hotel room. It contains class fields: id, description, area, floor and haskingsizebed
+// and methods: getters, setters, howManyObjects.
 class Room
 {
 public:

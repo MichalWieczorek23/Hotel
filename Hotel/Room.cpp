@@ -2,6 +2,7 @@
 
 unsigned int Room::objectCount = 0;
 
+// Constructors:
 Room::Room()
 {
 	++objectCount;
@@ -13,17 +14,19 @@ Room::Room()
 	//cout << "Stworzylem room!" << endl;
 }
 
+// Destructors
 Room::~Room()
 {
 	--objectCount;
 	//cout << "Usunalem room!" << endl;
 }
 
+// Methods return number of objects of this class
 unsigned int Room::howManyObjects() {
 	return objectCount;
 }
 
-
+// Getters:
 string Room::getDescription() {
 	return this->description;
 }
@@ -40,6 +43,7 @@ bool Room::hasKingSizeBed() {
 	return this->haskingsizebed;
 }
 
+// Setters:
 void Room::setDescription(string desc) {
 	this->description = desc;
 }

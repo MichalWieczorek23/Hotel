@@ -2,6 +2,7 @@
 
 unsigned int Client::objectCount = 0;
 
+// Constructors:
 Client::Client()
 {
 	++objectCount;
@@ -16,16 +17,19 @@ Client::Client()
 	//cout << "Simple Client made" << endl;
 }
 
+// Destructors:
 Client::~Client()
 {
 	--objectCount;
 	//cout << "Simple Client erase!" << endl;
 }
 
+// Methods return number of objects of this class
 unsigned int Client::howManyObjects() {
 	return objectCount;
 }
 
+// Getters:
 string Client::getFirstName() {
 	return this->firstName;
 }
@@ -50,6 +54,7 @@ string Client::getPhoneNumber() {
 	return this->phoneNumber;
 }
 
+// Setters:
 void Client::setFirstName(string name) {
 	this->firstName = name;
 }

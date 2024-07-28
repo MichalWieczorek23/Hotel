@@ -8,6 +8,9 @@ using std::cin;
 using std::endl;
 using std::string;
 
+// Class represents room reservation. It contains class fields of class types like Client, Room.
+// It contains class fields: date, isconfirmed, client, room and methods: getters, setters, howManyObjects(), 
+// confirmReservation()
 class RoomReservation
 {
 public:
