@@ -2,6 +2,7 @@
 #include "RoomReservation.h"
 #include "Room.h"
 #include "Client.h"
+#include "PremiumClient.h"
 
 int main()
 {
@@ -36,4 +37,20 @@ int main()
 
     cout << "Room reservation data: date->" << rr1.getDate() << ", isConfirmed->"
         << rr1.isConfirmed() << ", client->" << rr1.getClient().getFirstName() << ", room->" << rr1.getRoom().getDescription() << endl;
+
+    PremiumClient pc1;
+    std::cout << "Number of clients: " << c1.howManyObjects() << endl;
+    pc1.setFirstName("Szymon");
+    pc1.setLastName("Bulwa");
+    pc1.setBirthDate("29-03-2023");
+    pc1.setEmail("szymon@mail.com");
+    pc1.setSmoking(true);
+    pc1.setPhoneNumber("123456789");
+
+    cout << "Client data after update: firstname->" << pc1.getFirstName() << ", lastname->"
+        << pc1.getLastName() << ", birthdate->" << pc1.getBirthDate() << ", email->" << pc1.getEmail() <<
+        ", isSmoking->" << pc1.isSmoking() << ", phone->" << pc1.getPhoneNumber() << "accouttype->" << 
+        pc1.getAccountType() << endl;
+
+    cout << pc1.getFullName() << endl;
 }
