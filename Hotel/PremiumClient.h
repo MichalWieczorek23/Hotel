@@ -5,6 +5,9 @@
 // it also contain fields: premiumAccountType and methods: getters, setters, getFullName()
 class PremiumClient : public Client
 {
+private:
+	bool premiumAccountType;
+
 public:
 	PremiumClient();
 	~PremiumClient();
@@ -12,7 +15,4 @@ public:
 	string getFullName();
 	bool getAccountType();
 	void setAccountType(bool);
-
-private:
-	bool premiumAccountType;
 };

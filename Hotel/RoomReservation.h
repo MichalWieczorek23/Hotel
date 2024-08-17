@@ -13,6 +13,14 @@ using std::string;
 // confirmReservation()
 class RoomReservation
 {
+private:
+	static unsigned int objectCount;
+
+	string date;
+	bool isconfirmed;
+	Client client;
+	Room room;
+
 public:
 	RoomReservation();
 	~RoomReservation();
@@ -29,12 +37,4 @@ public:
 	void setConfirmed(bool confirmation);
 	void setClient(Client client);
 	void setRoom(Room room);
-
-private:
-	static unsigned int objectCount;
-
-	string date;
-	bool isconfirmed;
-	Client client;
-	Room room;
 };

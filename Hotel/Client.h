@@ -10,6 +10,17 @@ using std::string;
 // phoneNumber and methods: getters, setters, howManyObjects()
 class Client
 {
+private:
+	static unsigned int objectCount;
+
+	string id;
+	string firstName;
+	string lastName;
+	string birthDate;
+	string email;
+	bool iSmoking;
+	string phoneNumber;
+
 public:
 	Client();
 	~Client();
@@ -29,15 +40,4 @@ public:
 	void setEmail(string mail);
 	void setSmoking(bool smoking);
 	void setPhoneNumber(string number);
-
-private:
-	static unsigned int objectCount;
-
-	string id;
-	string firstName;
-	string lastName;
-	string birthDate;
-	string email;
-	bool iSmoking;
-	string phoneNumber;
 };

@@ -10,6 +10,15 @@ using std::string;
 // and methods: getters, setters, howManyObjects.
 class Room
 {
+private:
+	static unsigned int objectCount;
+
+	string id;
+	string description;
+	double area;
+	int floor;
+	bool haskingsizebed;
+
 public:
 	Room();
 	~Room();
@@ -25,13 +34,4 @@ public:
 	void setArea(double ar);
 	void setFloor(int fl);
 	void setHasKingSizeBed(bool haskingbed);
-
-private:
-	static unsigned int objectCount;
-
-	string id;
-	string description;
-	double area;
-	int floor;
-	bool haskingsizebed;
 };

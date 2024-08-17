@@ -141,12 +141,14 @@
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Hotel.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="PremiumClient.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="RoomReservation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h" />
+    <ClInclude Include="Hotel.h" />
     <ClInclude Include="PremiumClient.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="RoomReservation.h" />
